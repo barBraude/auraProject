@@ -1,0 +1,37 @@
+<div class="search">
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field class="warpper-search">
+      <mat-label class="search-label">Search A Movie</mat-label>
+      <input class="input-text" matInput [(ngModel)]="searchText" name="inputValue" required>
+    </mat-form-field>
+
+    <button class="search-btn" mat-button type="submit">Search</button>
+
+  </form>
+</div>
+
+<!-- If the movie array is empty -->
+<div *ngIf="isError">
+  <div class="error-movie">{{ErrorText}}</div>
+  <div class="sub-text">Please Try Again!</div>
+</div>
+
+<!-- pagination -->
+<div  class="pagination-movie" *ngIf="movies.length > 0">
+  <mat-paginator [length]="100" [hidePageSize]="true" (page)="getPageIndex($event)" [pageSize]="pageSize" [length]="totalResults">
+  </mat-paginator>
+</div>
+
+<!-- Show all the movie from the OMdb api callback -->
+<div *ngFor="let item of movies" class="movies">
+  <div class="container-movie">
+    <div class="wrapper-poster">
+      <div *ngIf="item.Poster" class="poster" style="background-image: url({{item.Poster}});"></div>
+    </div>
+    <div class="movie-info">
+      <div class="title">{{item.Title}}</div>
+      <div class="year">{{item.Year}}</div>
+    </div>
+  </div>
+</div>
+
