@@ -9,7 +9,7 @@ To get starts please clone the project in the following command:
 
 ## Installation
 
-`npm install` dor node_modules package 
+`npm install` for node_modules package.
 
 ## Development server
 
