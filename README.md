@@ -4,7 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Get Started
 To get starts please clone the project in the following command:
+
 `git clone https://github.com/barBraude/auraProject.git`
+
+## Installation
+
+`npm install` dor node_modules package 
 
 ## Development server
 
@@ -13,8 +18,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Branch
 The code is on branch `main` on the remote
 
-## Installation
-`npm install` if something missing when the program is running  
+
 
 
  
