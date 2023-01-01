@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Branch
 The code is on branch `main` on the remote
 
-##installation
+## Installation
 `npm install` if something missing when the program is running  
 
 
